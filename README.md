@@ -5,7 +5,7 @@ This php script solves water jug riddles
 
 How to config?
 ------------------
-Edit these lines in file [water_jug_solver.php](https://github.com/jezek/water-jug-solver/waterjug-solver.php) for config:
+Edit these lines in file [water_jug_solver.php](https://github.com/jezek/water-jug-solver/waterJugSolver.php) for config:
   * line 11: in array there are jug names and volumes
   * line 5: start state of jugs
   * line 7: end state of jugs
