@@ -1,13 +1,13 @@
 <?php
 
-//$zaciatok = new skumavkyStav(array('A'=>10, 'B'=>0, 'C'=>0, 'D'=>0, 'E'=>10));
-$zaciatok = new skumavkyStav(array('A'=>16, 'B'=>0, 'C'=>0));
 
-//$koniec = new skumavkyStav(array('A'=>5, 'B'=>5, 'C'=>5, 'D'=>3, 'E'=>2));
+//start state of jugs
+$zaciatok = new skumavkyStav(array('A'=>16, 'B'=>0, 'C'=>0));
+//end state of jugs
 $koniec = new skumavkyStav(array('A'=>8, 'B'=>8, 'C'=>0));
 
 class skumavkyStav {
-  //private $skumavky = array('A'=>10, 'B'=>6, 'C'=>9, 'D'=>3, 'E'=>10);
+  // jugs and jug volume definition
   private $skumavky = array('A'=>16, 'B'=>9, 'C'=>7);
 
   protected $stav = null;
@@ -76,6 +76,8 @@ class skumavkyStav {
     return $ret;
   }
 }
+
+// main program
 $stavovePole = array ((string)$zaciatok=>$zaciatok);
 
 for ($i=0; $i<count($stavovePole); $i++) {
